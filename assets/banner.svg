@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background linear gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1128" />
+      <stop offset="50%" stop-color="#001e3d" />
+      <stop offset="100%" stop-color="#003566" />
+    </linearGradient>
+
+    <!-- Glowing accent gradient -->
+    <linearGradient id="cyanBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00b4d8" />
+      <stop offset="50%" stop-color="#0077b6" />
+      <stop offset="100%" stop-color="#7209b7" />
+    </linearGradient>
+
+    <!-- Card gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Subtle Particle Filter -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      fill: #90e0ef;
+      letter-spacing: 0.2px;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #ffffff;
+    }
+
+    /* Ambient Pulsing & Floating Animations */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.08); }
+    }
+    @keyframes floatOrb1 {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(30px, -20px); }
+    }
+    @keyframes floatOrb2 {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(-25px, 25px); }
+    }
+    @keyframes dashCycle {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -120; }
+    }
+    @keyframes cardFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .pulsing-orb {
+      animation: pulseGlow 6s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+    .floating-orb-1 {
+      animation: floatOrb1 8s ease-in-out infinite;
+    }
+    .floating-orb-2 {
+      animation: floatOrb2 10s ease-in-out infinite;
+    }
+    .flow-line {
+      stroke-dasharray: 8 6;
+      animation: dashCycle 4s linear infinite;
+    }
+    .animated-card-1 {
+      animation: cardFloat 5s ease-in-out infinite;
+    }
+    .animated-card-2 {
+      animation: cardFloat 6s ease-in-out infinite 1s;
+    }
+    .animated-card-3 {
+      animation: cardFloat 5.5s ease-in-out infinite 2s;
+    }
+  </style>
+
+  <!-- Deep Background -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)" rx="16" />
+
+  <!-- Dynamic Ambient Glowing Orbs in Background -->
+  <g class="floating-orb-1">
+    <circle cx="200" cy="80" r="140" fill="#0077b6" opacity="0.25" filter="url(#glow)" class="pulsing-orb" />
+  </g>
+  <g class="floating-orb-2">
+    <circle cx="1020" cy="270" r="160" fill="#7209b7" opacity="0.22" filter="url(#glow)" class="pulsing-orb" />
+  </g>
+  <circle cx="600" cy="330" r="120" fill="#00b4d8" opacity="0.15" filter="url(#glow)" />
+
+  <!-- Subtle High-tech Grid / Wave Lines -->
+  <path d="M 0 280 Q 300 240, 600 290 T 1200 250" fill="none" stroke="#00b4d8" stroke-width="1.5" opacity="0.2" />
+  <path d="M 0 310 Q 350 260, 700 320 T 1200 290" fill="none" stroke="#7209b7" stroke-width="1.5" opacity="0.18" />
+  
+  <!-- Flow Lines (Indicating Salesforce to Billing Sync) -->
+  <path class="flow-line" d="M 120 70 C 350 30, 850 30, 1080 70" fill="none" stroke="#00b4d8" stroke-width="2" opacity="0.4" />
+  <path class="flow-line" d="M 1080 75 C 850 115, 350 115, 120 75" fill="none" stroke="#7209b7" stroke-width="2" opacity="0.3" />
+
+  <!-- Floating Dynamic Feature Pills / Cards (Backgrounded, flanking sides) -->
+  <g class="animated-card-1">
+    <rect x="70" y="240" width="220" height="60" rx="12" fill="url(#cardGrad)" stroke="#00b4d8" stroke-width="1.2" stroke-opacity="0.4" filter="url(#softGlow)" />
+    <text x="100" y="265" class="badge-text" fill="#00b4d8">⚡ Real-time Webhooks</text>
+    <text x="100" y="285" font-family="-apple-system, sans-serif" font-size="11" fill="#caf0f8">Bi-directional CRM Sync</text>
+  </g>
+
+  <g class="animated-card-2">
+    <rect x="490" y="240" width="220" height="60" rx="12" fill="url(#cardGrad)" stroke="#7209b7" stroke-width="1.2" stroke-opacity="0.5" filter="url(#softGlow)" />
+    <text x="520" y="265" class="badge-text" fill="#e0aaff">💳 Stripe &amp; Chargebee</text>
+    <text x="520" y="285" font-family="-apple-system, sans-serif" font-size="11" fill="#caf0f8">Subscription Lifecycle</text>
+  </g>
+
+  <g class="animated-card-3">
+    <rect x="910" y="240" width="220" height="60" rx="12" fill="url(#cardGrad)" stroke="#00b4d8" stroke-width="1.2" stroke-opacity="0.4" filter="url(#softGlow)" />
+    <text x="940" y="265" class="badge-text" fill="#48cae4">🔄 Quote-to-Cash / CPQ</text>
+    <text x="940" y="285" font-family="-apple-system, sans-serif" font-size="11" fill="#caf0f8">Automated Invoicing &amp; Recur</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header, Title & Subtitle (Clear, readable, high contrast) -->
+  <g>
+    <!-- Top Super-header / Badge -->
+    <rect x="470" y="32" width="260" height="28" rx="14" fill="#0077b6" fill-opacity="0.35" stroke="#00b4d8" stroke-width="1.2" />
+    <text x="600" y="51" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#90e0ef" letter-spacing="1.2">CURATED AWESOME ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="600" y="118" text-anchor="middle" class="title-text" font-size="38" filter="url(#glow)">Awesome Salesforce CRM</text>
+    <text x="600" y="165" text-anchor="middle" class="title-text" font-size="38" fill="url(#cyanBlueGrad)">Billing Integration 🚀</text>
+
+    <!-- Subtitle / Value Proposition -->
+    <text x="600" y="206" text-anchor="middle" class="subtitle-text" font-size="16">
+      SaaS Connectors, iPaaS Pipelines &amp; Open-Source Architecture for Subscriptions &amp; Invoices
+    </text>
+  </g>
+</svg>

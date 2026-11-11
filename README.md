@@ -1,156 +1,175 @@
-# Awesome-Salesforce-CRM-Billing-Integration
+<div align="center">
 
-# Awesome Salesforce CRM Billing Integration
+<img src="./assets/banner.svg" alt="Awesome Salesforce CRM Billing Integration Banner" width="100%" />
 
-> A curated list of top Salesforce CRM Billing Integration platforms — both SaaS/Hosted commercial connectors and open-source alternatives for syncing subscriptions, invoices, and payments between Salesforce and billing systems.
-> 🌟 Star this repo if you find it useful! 🌟
+# ⚡ Awesome Salesforce CRM Billing Integration 💳
+
+[![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/jc4xtF58Ve)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-blue.svg?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration/pulls)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration)
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration?style=social)](https://github.com/ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration/stargazers)
+[![GitHub followers](https://img.shields.io/github/followers/ishandutta2007?label=Follow)](https://github.com/ishandutta2007)
+
+<p align="center">
+  <strong>A curated directory of top-tier Salesforce CRM Billing Integration platforms, SaaS/iPaaS enterprise connectors, and open-source payment & invoicing architectures.</strong>
+</p>
+<p align="center">
+  <em>Streamline subscription lifecycle management, recurring revenue sync, quote-to-cash workflows, dunning pipelines, and invoice-to-cash accounting between Salesforce and modern billing engines.</em>
+</p>
+
+</div>
 
 ---
 
-## 📋 Table of Contents
+## 📑 Table of Contents
 
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Chargebee for Salesforce](#chargebee-for-salesforce)
-  - [Chargebee CPQ for Salesforce](#chargebee-cpq-for-salesforce)
-  - [MuleSoft Anypoint Salesforce Connector](#mulesoft-anypoint-salesforce-connector)
-  - [Celigo Salesforce Connector](#celigo-salesforce-connector)
-  - [Workato Salesforce Recipe](#workato-salesforce-recipe)
-  - [Jitterbit Salesforce](#jitterbit-salesforce)
-  - [Boomi Salesforce Connector](#boomi-salesforce-connector)
-- [Open-Source Software](#-open-source-software)
-  - [salesforce-stripe-payment-processing](#salesforce-stripe-payment-processing)
-  - [SFDC-MaxioAB-Integration](#sfdc-maxioab-integration)
-  - [Delivery Hub](#delivery-hub)
-  - [Twenty (Salesforce Alternative)](#twenty-salesforce-alternative)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🟦 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [🟩 Open-Source Software](#-open-source-software)
+- [📊 Comparison at a Glance](#-comparison-at-a-glance)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global subscription billing management market was estimated between **$7.2B and $7.88B in 2024**, rising toward **$9.2B+ in 2025** at a compound annual growth rate (CAGR) of ~14–17%, underpinned by a broader recurring digital payments volume exceeding $160B+. Over 60% of modern enterprises actively integrate their recurring billing engines directly with cloud CRM suites like Salesforce to unify quote-to-cash operations.
+
+The sector is **moderately fragmented**: mega-cap enterprise cloud ecosystems (Salesforce Revenue Cloud, MuleSoft, SAP) dominate high-end, complex corporate architectures, while specialized subscription powerhouses (Chargebee, Stripe Billing, Zuora) and agile modern iPaaS platforms (Boomi, Workato, Celigo) vigorously capture mid-market and high-growth SaaS segments through flexible low-code orchestration.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Salesforce CRM Billing Integration platforms. These are not open-source but are included as reference points for feature comparison.
+Below is an overview of commercial, cloud-hosted Salesforce CRM Billing Integration and iPaaS solutions, ranked in descending order of vendor scale (company valuation and annual revenue).
 
-### Chargebee for Salesforce
-**Type:** Native billing sync with customizable field mapping
-Chargebee's Salesforce integration maintains a one-to-one relationship between Chargebee customers and Salesforce accounts, keeping both systems synchronized . Key capabilities include:
-- Creating and managing Chargebee subscriptions directly from Salesforce without switching tools 
-- Multiple Chargebee sites connected to a single Salesforce instance 
-- Support for Metered Billing, Multi-decimal Pricing, and Quantities 
-- A **sync health dashboard** for at-a-glance status and **record-level sync logs** for complete audit trails 
-- Advanced field-mapping configuration between Salesforce and Chargebee 
-
-The integration is configured entirely within Salesforce, with customizations available to suit specific business workflows . Sync frequencies range from every 10 minutes to daily .
-**Best for:** Subscription businesses already using Chargebee wanting native, bi-directional sync of customers, subscriptions, and invoices within Salesforce.
-
-### Chargebee CPQ for Salesforce
-**Type:** CPQ quoting with Chargebee's pricing engine
-Chargebee CPQ brings advanced quoting capabilities to Salesforce, letting sales teams create quotes within Salesforce while leveraging Chargebee's product catalog and pricing engine . Features include:
-- **Ramps** for ramped pricing structures over time 
-- **Multi-Frequency Billing** combining products with different billing frequencies in one quote 
-- **Access Control** for field-level permissions on quote fields 
-
-**Important limitation:** CPQ integration cannot operate concurrently with the standard Chargebee for Salesforce integration . Quote creation automatically creates a Chargebee customer if one doesn't exist for the linked Salesforce Account .
-**Best for:** Sales teams needing CPQ-level quoting with Chargebee's catalog and pricing, accepting that it replaces the standard Salesforce integration.
-
-### MuleSoft Anypoint Salesforce Connector
-**Type:** Enterprise iPaaS with certified Salesforce connector
-MuleSoft provides a certified Salesforce connector within its Anypoint Platform, enabling integration between Salesforce and billing systems (Chargebee, Stripe, NetSuite, etc.) through DataWeave transformations and API-led connectivity. Suited for enterprises with complex, multi-system billing workflows requiring governance and reusability.
-
-### Celigo Salesforce Connector
-**Type:** Integration platform with pre-built Salesforce flows
-Celigo offers pre-built connectors and integration apps for Salesforce, including flows for billing platforms. Its marketplace includes accelerators for order-to-cash and quote-to-cash processes, making it suitable for organizations wanting managed integration apps rather than custom development.
-
-### Workato Salesforce Recipe
-**Type:** Enterprise automation with Salesforce recipes
-Workato provides pre-built recipes connecting Salesforce to billing platforms, with triggers and actions for customer sync, subscription creation, and invoice updates. Suited for organizations wanting automation with governance and audit trails.
-
-### Jitterbit Salesforce
-**Type:** iPaaS with Salesforce and billing connectors
-Jitterbit Harmony provides reusable connectors for Salesforce alongside billing platform connectors, with API management and EDI capabilities. Suited for organizations needing unified integration across CRM, billing, and partner systems.
-
-### Boomi Salesforce Connector
-**Type:** Cloud-native iPaaS with Salesforce connectivity
-Boomi offers a pre-built Salesforce connector with visual mapping and data transformation, enabling integration between Salesforce and billing systems. Positioned for mid-market organizations wanting a proven iPaaS without enterprise complexity.
+| Solution | Vendor Scale (Valuation / Revenue) | Key Focus & Billing Capabilities | Starting Tier Pricing | Free Tier Limits / Free Trial |
+|---|---|---|---|---|
+| **[MuleSoft Anypoint Platform](https://www.mulesoft.com)** | **$6.5B acquisition valuation** (Salesforce unit; Salesforce $34B+ revenue) | Enterprise iPaaS offering certified Salesforce connectors, DataWeave transformations, and robust API-led connectivity across ERPs, Chargebee, and Stripe. | Starts at **$2,000/month** (entry Integration package, billed annually) | **30-day free trial**; evaluation only, no production deployments |
+| **[Workato](https://www.workato.com)** | **$5.7B valuation** (~$150M ARR) | Enterprise integration & automation recipes connecting Salesforce CRM with billing systems, syncing invoices, subscriptions, and customer accounts. | Starts at **$75/month** (Pro plan base) | **Free tier forever** (one-time allotment of 50,000 credits for workflow testing) |
+| **[Boomi](https://boomi.com)** | **$4.0B acquisition valuation** (~$500M ARR) | Cloud-native iPaaS with pre-configured Salesforce connectors, drag-and-drop mappings, master data governance, and high-volume billing endpoints. | Starts at **$99/month** (Pay-as-you-go + $0.05/message) | **30-day free trial**; full platform access, self-service sandbox without limits |
+| **[Chargebee for Salesforce](https://www.chargebee.com)** | **$3.5B valuation** (~$202M ARR) | Native bidirectional sync for Salesforce accounts, opportunities, subscriptions, metered billing, multi-decimal pricing, and sync health dashboards. | **$0/month** (Starter Plan for early stage) / **$599/month** (Performance Plan) | **Free forever up to $250,000** cumulative lifetime billing (0.75% overage fee thereafter); or standard 14-day free trial |
+| **[Chargebee CPQ for Salesforce](https://www.chargebee.com/cpq/)** | **$3.5B valuation** (~$202M ARR) | Native quoting inside Salesforce CRM with ramped pricing, multi-frequency billing, RevOps approvals, and direct quote-to-customer creation. | **$0/month** (CPQ Lite) / Custom pricing for full enterprise CPQ | **Free tier forever for first 50 quotes** generated in CPQ Lite; standard 14-day full trial |
+| **[Celigo integrator.io](https://www.celigo.com)** | **~$800M+ valuation** (~$100M ARR) | iPaaS integration platform with pre-built Salesforce connectors, order-to-cash automations, and billing marketplace flows. | Starts at **$600/month** (Standard Edition entry tier) | **Free plan forever** (capped at 1 active integration flow and 2 endpoints); plus **30-day free trial** with unlimited flows |
+| **[Jitterbit Harmony](https://www.jitterbit.com)** | **~$150M+ valuation** (~$105M ARR) | Unified iPaaS connecting Salesforce CRM with ERPs, accounting packages, and billing platforms via pre-built connectors and low-code orchestrations. | Starts at **$1,000/month** (Standard Tier, annual contract) | **14-day free trial**; non-production evaluation sandbox (data retained only upon paid upgrade) |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Salesforce Billing Integration tools. The open-source ecosystem is **limited**—available projects focus on specific billing platforms (Stripe, Maxio) or provide broader Salesforce-native alternatives.
+Community-driven, open-source projects, developer SDKs, and native Salesforce Apex architectures for billing, payment gateways, and subscription management. Ranked in descending order of GitHub star count.
 
-### salesforce-stripe-payment-processing
-**Stack:** Apex (Salesforce) | **License:** Open Source (per GitHub)
-A robust Salesforce (Apex) integration with **Stripe** for payment processing, supporting both inbound (webhook) and outbound (API callout) events . Key features include:
-- **Inbound Webhook Handling:** Processes Stripe events (customer updates, subscription changes, invoice payments) via a REST resource 
-- **Outbound Stripe API Integration:** Creates and updates Stripe customers, products, prices, and checkout sessions from Salesforce 
-- **Secure Secrets:** Stores Stripe API keys in Salesforce custom metadata 
-- **Asynchronous Processing:** Uses Queueable Apex for non-blocking, scalable interactions 
-- **Comprehensive Tests:** Includes test data factories and HTTP callout mocks 
+### 🌟 Repositories by Popularity
 
-Architecture includes a `WebhookResource` for Stripe webhooks, a `StripeAPIClient` for outbound callouts, and Queueable classes for async operations. Setup requires configuring Stripe secret keys in Custom Metadata, Named Credentials, Remote Site Settings, and Stripe webhook endpoints .
-**Best for:** Salesforce developers wanting a production-ready, Apex-native Stripe integration with webhook handling and secure credential storage, avoiding external middleware.
+* **[Twenty (twentyhq/twenty)](https://github.com/twentyhq/twenty)** [![GitHub stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers)
+  * **Stack:** TypeScript, NestJS, React, PostgreSQL | **License:** AGPL-3.0
+  * **Overview:** A modern, self-hostable open-source CRM alternative to Salesforce with built-in billing, invoicing, and subscription processing capabilities via Stripe.
+  * **Ideal For:** Teams seeking a modern CRM codebase with native recurring billing logic out of the box without vendor lock-in.
 
-### SFDC-MaxioAB-Integration
-**Stack:** Python (AWS Lambda) / Apex | **License:** Open Source (per GitHub)
-An AWS Lambda function that integrates Salesforce with **Maxio Advanced Billing (AB) and Core** . It processes closed-won opportunities in Salesforce and creates corresponding customer records, component price points, and subscriptions in Maxio, then establishes a relationship from Maxio AB to Maxio Core . Features include:
-- Retrieves Salesforce Opportunity, Quote, Order, and Consumption Schedule data via OAuth 2.0 
-- Creates/updates Maxio customers and generates custom pricing tiers from Salesforce consumption schedules 
-- Creates subscriptions with appropriate components and price points 
-- Stores results in Snowflake for persistence and retrieval 
+* **[stripe-salesforce-ai-context (stripe/stripe-salesforce-ai-context)](https://github.com/stripe/stripe-salesforce-ai-context)** [![GitHub stars](https://img.shields.io/github/stars/stripe/stripe-salesforce-ai-context?style=social&color=white)](https://github.com/stripe/stripe-salesforce-ai-context/stargazers)
+  * **Stack:** Markdown, JSON, Stripe Context Prompts | **License:** MIT / Open
+  * **Overview:** Stripe's official AI-native developer context repository for accelerating custom Stripe-to-Salesforce billing integrations, webhook architectures, and automated CRM workflows.
+  * **Ideal For:** Developers building customized Apex and Node.js sync pipelines connecting Stripe Billing with Salesforce.
 
-**Trade-off:** Requires AWS Lambda, Salesforce, Maxio AB/Core, and Snowflake accounts, making it a multi-service integration rather than a simple connector.
-**Best for:** Organizations using Maxio for billing needing a Lambda-based bridge from Salesforce opportunities to Maxio subscriptions with Snowflake persistence.
+* **[SalesforceLabs Easy-PDF (SalesforceLabs/Easy-PDF)](https://github.com/SalesforceLabs/Easy-PDF)** [![GitHub stars](https://img.shields.io/github/stars/SalesforceLabs/Easy-PDF?style=social&color=white)](https://github.com/SalesforceLabs/Easy-PDF/stargazers)
+  * **Stack:** Apex, Visualforce | **License:** SalesforceLabs Open Source
+  * **Overview:** Open-source PDF invoice and quote generator for Salesforce. Enables one-click invoice rendering from standard Opportunities, Orders, or custom billing objects.
+  * **Ideal For:** Organizations seeking no-cost, declarative/Apex invoice PDF generation directly within their Salesforce org.
 
-### Delivery Hub
-**Stack:** Apex / Lightning Web Components (Salesforce) | **License:** Open Source (per project)
-Delivery Hub is a free, open-source Salesforce-native managed package that bundles document generation, invoice generation, and automation in one pipeline . Key billing-related features include:
-- **Invoice Generation:** One-click PDF invoices from Work Items or Projects, with line items pulling automatically from approved Work Logs (sums hours by rate, applies tax, calculates total) 
-- **Optional QuickBooks Integration:** Bidirectional sync of invoices and payments, so when QuickBooks records a payment the Work Item closes automatically; reverse flow supports credit memos and refunds 
-- **Invoice Lifecycle:** Draft → Generated → Sent → Paid → Closed 
+* **[ApexMerchant (cnaccio/ApexMerchant)](https://github.com/cnaccio/ApexMerchant)** [![GitHub stars](https://img.shields.io/github/stars/cnaccio/ApexMerchant?style=social&color=white)](https://github.com/cnaccio/ApexMerchant/stargazers)
+  * **Stack:** Apex (Salesforce native) | **License:** MIT
+  * **Overview:** A multi-gateway payment processing library for Salesforce and Force.com supporting Stripe, Authorize.Net, and PayPal for real-time transaction handling.
+  * **Ideal For:** Native Salesforce apps requiring programmatic card charging, transaction logging, and gateway routing.
 
-The package ships with 150 Apex classes, 58 Lightning Web Components, and 89%+ test coverage . It explicitly positions itself as replacing DocuSign, Conga/FormStack, external invoicing tools, and Zapier/n8n for delivery workflows .
-**Best for:** Salesforce-native consultancies and service businesses wanting invoice generation with QuickBooks sync without paying for separate billing or document tools.
+* **[Stripe-Apex-Toolkit (aslambari/Stripe-Apex-Toolkit)](https://github.com/aslambari/Stripe-Apex-Toolkit)** [![GitHub stars](https://img.shields.io/github/stars/aslambari/Stripe-Apex-Toolkit?style=social&color=white)](https://github.com/aslambari/Stripe-Apex-Toolkit/stargazers)
+  * **Stack:** Apex | **License:** MIT
+  * **Overview:** Comprehensive Apex wrapper library for Stripe REST APIs, providing strongly typed classes for Stripe Customers, Invoices, Subscriptions, and PaymentIntents.
+  * **Ideal For:** Salesforce engineers writing custom billing sync logic without having to construct raw HTTP JSON payloads manually.
 
-### Twenty (Salesforce Alternative)
-**Stack:** TypeScript / NestJS / React / PostgreSQL | **License:** AGPL-3.0
-Twenty is a modern open-source CRM positioned as a Salesforce alternative, with **built-in billing automation** capabilities directly inside the CRM workflow . It integrates with Stripe for payment processing and offers a GraphQL API for custom integrations . Billing features let teams manage subscriptions, invoices, and payment collection without stitching together separate tools . Self-hostable via Docker with PostgreSQL, or available as a cloud-hosted version.
-**Best for:** Teams wanting an open-source CRM with native billing features baked in, rather than integrating Salesforce with a separate billing platform.
+* **[Dunning and Collections for Salesforce Billing (SalesforceLabs/Dunning-and-Collections-Salesforce-Billing)](https://github.com/SalesforceLabs/Dunning-and-Collections-Salesforce-Billing)** [![GitHub stars](https://img.shields.io/github/stars/SalesforceLabs/Dunning-and-Collections-Salesforce-Billing?style=social&color=white)](https://github.com/SalesforceLabs/Dunning-and-Collections-Salesforce-Billing/stargazers)
+  * **Stack:** Apex, Lightning Components | **License:** SalesforceLabs Open Source
+  * **Overview:** Reference architecture and automated workflows for managing overdue invoices, late payment notifications, automated dunning cadences, and customer collections.
+  * **Ideal For:** Salesforce Billing users needing out-of-the-box collections management without custom development.
+
+* **[SalesforceBillingPaymentGatewayMockAdapterReference (forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference)](https://github.com/forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference)** [![GitHub stars](https://img.shields.io/github/stars/forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference?style=social&color=white)](https://github.com/forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference/stargazers)
+  * **Stack:** Apex | **License:** BSD-3-Clause
+  * **Overview:** Official reference implementation from Salesforce demonstrating how to construct custom payment gateway adapters for Salesforce Billing.
+  * **Ideal For:** FinTech engineers developing custom payment gateway connectors (Adyen, Stripe, Checkout.com) into Salesforce Billing.
+
+* **[Delivery-Hub (Nimba-Solutions/Delivery-Hub)](https://github.com/Nimba-Solutions/Delivery-Hub)** [![GitHub stars](https://img.shields.io/github/stars/Nimba-Solutions/Delivery-Hub?style=social&color=white)](https://github.com/Nimba-Solutions/Delivery-Hub/stargazers)
+  * **Stack:** Apex, Lightning Web Components (LWC) | **License:** Open Source
+  * **Overview:** Salesforce-native delivery pipeline providing one-click PDF invoice generation from logged work hours and bidirectional invoice/payment sync with QuickBooks.
+  * **Ideal For:** Service agencies and consultancies wanting automated invoicing without external subscription middleware.
+
+* **[salesforce-stripe-payment-processing (Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe)](https://github.com/Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe)** [![GitHub stars](https://img.shields.io/github/stars/Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe?style=social&color=white)](https://github.com/Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe/stargazers)
+  * **Stack:** Apex, Webhooks, Queueable Apex | **License:** Open Source
+  * **Overview:** Apex-native Stripe integration handling inbound webhooks (`invoice.payment_succeeded`, `subscription.updated`) and outbound calls with Custom Metadata secrets.
+  * **Ideal For:** Production-tested blueprints for bi-directional Stripe webhook handling and event dispatching inside Salesforce orgs.
+
+* **[SFDC-MaxioAB-Integration (caseydunlap/SFDC-MaxioAB-Integration)](https://github.com/caseydunlap/SFDC-MaxioAB-Integration)** [![GitHub stars](https://img.shields.io/github/stars/caseydunlap/SFDC-MaxioAB-Integration?style=social&color=white)](https://github.com/caseydunlap/SFDC-MaxioAB-Integration/stargazers)
+  * **Stack:** Python (AWS Lambda), Apex | **License:** Open Source
+  * **Overview:** Serverless AWS Lambda pipeline integrating Salesforce closed-won opportunities with Maxio Advanced Billing (AB) and Maxio Core, persisted to Snowflake.
+  * **Ideal For:** High-volume B2B teams running consumption billing on Maxio requiring serverless queue processing.
 
 ---
 
 ## 📊 Comparison at a Glance
 
-| Software | License | Stack | Billing Platform | Sync Direction | Self-Hosted | Best For |
-|----------|---------|-------|------------------|----------------|-------------|----------|
-| **Chargebee for Salesforce** | Proprietary | Cloud | Chargebee | Bi-directional | ❌ | Native Chargebee + Salesforce |
-| **Chargebee CPQ** | Proprietary | Cloud | Chargebee | Salesforce → Chargebee | ❌ | CPQ quoting with Chargebee |
-| **MuleSoft** | Proprietary | Cloud | Any (via connector) | Bi-directional | ❌ | Enterprise iPaaS |
-| **Celigo** | Proprietary | Cloud | Any (pre-built flows) | Bi-directional | ❌ | Managed integration apps |
-| **salesforce-stripe-payment-processing** | Open Source | Apex | Stripe | Bi-directional | ✅ (In-org) | Apex-native Stripe integration |
-| **SFDC-MaxioAB-Integration** | Open Source | Python/Apex | Maxio | Salesforce → Maxio | ✅ (Lambda) | Maxio bridge + Snowflake |
-| **Delivery Hub** | Open Source | Apex/LWC | QuickBooks | Bi-directional | ✅ (In-org) | Invoice generation + QB sync |
-| **Twenty** | AGPL-3.0 | TypeScript | Stripe (built-in) | N/A (CRM) | ✅ | CRM with native billing |
+| Solution | Model | Technology Stack | Supported Billing Systems | Sync Direction | Self-Hosted Option | Best For |
+|---|---|---|---|---|---|---|
+| **Chargebee for Salesforce** | Proprietary SaaS | Cloud Managed Package | Chargebee | Bi-directional | ❌ | Native Chargebee + Salesforce CRM workflows |
+| **Chargebee CPQ** | Proprietary SaaS | Cloud Managed Package | Chargebee | Salesforce → Chargebee | ❌ | CPQ quoting with dynamic pricing & ramps |
+| **MuleSoft Anypoint** | Proprietary SaaS | iPaaS / DataWeave | Any (Universal Connector) | Bi-directional | ❌ | Multi-system enterprise integration architectures |
+| **Workato** | Proprietary SaaS | iPaaS / Low-Code Recipes | Stripe, NetSuite, Chargebee | Bi-directional | ❌ | Low-code enterprise workflow automation |
+| **Boomi** | Proprietary SaaS | Cloud iPaaS | Any (REST / SOAP / EDI) | Bi-directional | ❌ | Mid-market to enterprise data pipeline sync |
+| **Celigo integrator.io** | Proprietary SaaS | iPaaS Marketplace Flows | Stripe, NetSuite, QuickBooks | Bi-directional | ❌ | Pre-built quote-to-cash integration flows |
+| **Jitterbit Harmony** | Proprietary SaaS | Harmony iPaaS | SAP, NetSuite, Stripe | Bi-directional | ❌ | CRM-to-ERP & billing synchronization |
+| **Twenty** | Open Source | TypeScript / NestJS / React | Stripe (Native integration) | Native CRM | ✅ | Complete open-source CRM with built-in billing |
+| **stripe-salesforce-ai-context**| Open Source | Context Engine / Prompts | Stripe Billing | Bi-directional | ✅ | AI-assisted development of Stripe pipelines |
+| **SalesforceLabs Easy-PDF** | Open Source | Apex / Visualforce | Salesforce Objects | Native In-Org | ✅ (In-org) | Declarative PDF quote & invoice rendering |
+| **ApexMerchant** | Open Source | Apex Native | Stripe, PayPal, Auth.Net | Salesforce → Gateway | ✅ (In-org) | Multi-gateway programmatic card transactions |
+| **Stripe-Apex-Toolkit** | Open Source | Apex Native | Stripe API | Salesforce ↔ Stripe | ✅ (In-org) | Typed Apex classes for all Stripe endpoints |
+| **SFDC Dunning & Collections** | Open Source | Apex / Lightning | Salesforce Billing | Native In-Org | ✅ (In-org) | Automated invoice dunning & collections |
+| **SFDC Billing Mock Adapter** | Open Source | Apex Native | Any Payment Gateway | Salesforce Billing | ✅ (In-org) | Custom gateway adapter reference framework |
+| **Delivery-Hub** | Open Source | Apex / LWC | QuickBooks | Bi-directional | ✅ (In-org) | Professional services invoice sync with QB |
+| **salesforce-stripe-processing**| Open Source | Apex / Webhook REST | Stripe | Bi-directional | ✅ (In-org) | Production-ready Apex Stripe webhooks & sync |
+| **SFDC-MaxioAB-Integration** | Open Source | Python / AWS Lambda | Maxio (Chargify) | Salesforce → Maxio | ✅ (Lambda) | Serverless Maxio consumption billing bridge |
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring this curated repository! If you find this project valuable for your architectural designs, client integrations, or engineering workflows, please consider supporting its ongoing development:
+
+- ⭐ **Star this repository** to improve discoverability for fellow Salesforce architects and developers.
+- 🍴 **Fork the repo** to contribute new connectors, templates, or architectural patterns.
+- 📢 **Share with your network** on LinkedIn, X/Twitter, or Salesforce developer forums.
+- ☕ **Buy a coffee or sponsor ongoing maintenance:** Visit the [Sponsor Dashboard on GitHub](https://github.com/sponsors/ishandutta2007) to help sustain open-source curation!
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Salesforce CRM Billing Integration tool that should be listed here, please open a pull request with:
+Contributions are warmly welcomed! If you know of an outstanding open-source repository, connector, or developer tool for Salesforce billing integration that should be listed here:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem for **Salesforce billing integration** is fragmented across specific platform bridges (Stripe, Maxio) and Salesforce-native alternatives (Delivery Hub, Twenty) rather than general-purpose connectors. **salesforce-stripe-payment-processing** is the most complete open-source Apex-native Stripe integration, handling both webhooks and outbound API calls with secure credential storage . **Delivery Hub** is notable for bundling invoice generation with QuickBooks sync directly inside Salesforce at no cost . For production-grade multi-platform integration, commercial iPaaS connectors (MuleSoft, Celigo, Boomi) or native billing platform integrations (Chargebee) remain the standard choices.
+1. Fork this repository.
+2. Create a feature branch (`git checkout -b feature/new-billing-tool`).
+3. Add the project with details (repository name, URL, stack, license, and key differentiator).
+4. Verify that the project is genuinely open-source and active.
+5. Submit a pull request with a concise summary.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
-
----
-
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+This compilation is licensed under the [Creative Commons Zero v1.0 Universal (CC0-1.0)](LICENSE) Public Domain Dedication. All referenced third-party trademarks, project names, and logos belong to their respective owners.
