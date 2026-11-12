@@ -61,7 +61,7 @@ Below is an overview of commercial, cloud-hosted Salesforce CRM Billing Integrat
 
 ## 🟩 Open-Source Software
 
-Community-driven, open-source projects, developer SDKs, and native Salesforce Apex architectures for billing, payment gateways, and subscription management. Ranked in descending order of GitHub Stars_Count.
+Community-driven, open-source projects, developer SDKs, and native Salesforce Apex architectures for billing, payment gateways, and subscription management. Ranked in descending order of GitHub_Stars_Count.
 
 ### 🌟 Repositories by Popularity
 
