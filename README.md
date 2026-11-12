@@ -8,7 +8,7 @@
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-blue.svg?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration/pulls)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration)
-[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration?style=social)](https://github.com/ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration?style=social)](https://github.com/ishandutta2007/Awesome-Salesforce-CRM-Billing-Integration/stargazers)
 [![GitHub followers](https://img.shields.io/github/followers/ishandutta2007?label=Follow)](https://github.com/ishandutta2007)
 
 <p align="center">
@@ -61,56 +61,56 @@ Below is an overview of commercial, cloud-hosted Salesforce CRM Billing Integrat
 
 ## 🟩 Open-Source Software
 
-Community-driven, open-source projects, developer SDKs, and native Salesforce Apex architectures for billing, payment gateways, and subscription management. Ranked in descending order of GitHub star count.
+Community-driven, open-source projects, developer SDKs, and native Salesforce Apex architectures for billing, payment gateways, and subscription management. Ranked in descending order of GitHub Stars_Count.
 
 ### 🌟 Repositories by Popularity
 
-* **[Twenty (twentyhq/twenty)](https://github.com/twentyhq/twenty)** [![GitHub stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers)
+* **[Twenty (twentyhq/twenty)](https://github.com/twentyhq/twenty)** [![GitHub_Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers)
   * **Stack:** TypeScript, NestJS, React, PostgreSQL | **License:** AGPL-3.0
   * **Overview:** A modern, self-hostable open-source CRM alternative to Salesforce with built-in billing, invoicing, and subscription processing capabilities via Stripe.
   * **Ideal For:** Teams seeking a modern CRM codebase with native recurring billing logic out of the box without vendor lock-in.
 
-* **[stripe-salesforce-ai-context (stripe/stripe-salesforce-ai-context)](https://github.com/stripe/stripe-salesforce-ai-context)** [![GitHub stars](https://img.shields.io/github/stars/stripe/stripe-salesforce-ai-context?style=social&color=white)](https://github.com/stripe/stripe-salesforce-ai-context/stargazers)
+* **[stripe-salesforce-ai-context (stripe/stripe-salesforce-ai-context)](https://github.com/stripe/stripe-salesforce-ai-context)** [![GitHub_Stars](https://img.shields.io/github/stars/stripe/stripe-salesforce-ai-context?style=social&color=white)](https://github.com/stripe/stripe-salesforce-ai-context/stargazers)
   * **Stack:** Markdown, JSON, Stripe Context Prompts | **License:** MIT / Open
   * **Overview:** Stripe's official AI-native developer context repository for accelerating custom Stripe-to-Salesforce billing integrations, webhook architectures, and automated CRM workflows.
   * **Ideal For:** Developers building customized Apex and Node.js sync pipelines connecting Stripe Billing with Salesforce.
 
-* **[SalesforceLabs Easy-PDF (SalesforceLabs/Easy-PDF)](https://github.com/SalesforceLabs/Easy-PDF)** [![GitHub stars](https://img.shields.io/github/stars/SalesforceLabs/Easy-PDF?style=social&color=white)](https://github.com/SalesforceLabs/Easy-PDF/stargazers)
+* **[SalesforceLabs Easy-PDF (SalesforceLabs/Easy-PDF)](https://github.com/SalesforceLabs/Easy-PDF)** [![GitHub_Stars](https://img.shields.io/github/stars/SalesforceLabs/Easy-PDF?style=social&color=white)](https://github.com/SalesforceLabs/Easy-PDF/stargazers)
   * **Stack:** Apex, Visualforce | **License:** SalesforceLabs Open Source
   * **Overview:** Open-source PDF invoice and quote generator for Salesforce. Enables one-click invoice rendering from standard Opportunities, Orders, or custom billing objects.
   * **Ideal For:** Organizations seeking no-cost, declarative/Apex invoice PDF generation directly within their Salesforce org.
 
-* **[ApexMerchant (cnaccio/ApexMerchant)](https://github.com/cnaccio/ApexMerchant)** [![GitHub stars](https://img.shields.io/github/stars/cnaccio/ApexMerchant?style=social&color=white)](https://github.com/cnaccio/ApexMerchant/stargazers)
+* **[ApexMerchant (cnaccio/ApexMerchant)](https://github.com/cnaccio/ApexMerchant)** [![GitHub_Stars](https://img.shields.io/github/stars/cnaccio/ApexMerchant?style=social&color=white)](https://github.com/cnaccio/ApexMerchant/stargazers)
   * **Stack:** Apex (Salesforce native) | **License:** MIT
   * **Overview:** A multi-gateway payment processing library for Salesforce and Force.com supporting Stripe, Authorize.Net, and PayPal for real-time transaction handling.
   * **Ideal For:** Native Salesforce apps requiring programmatic card charging, transaction logging, and gateway routing.
 
-* **[Stripe-Apex-Toolkit (aslambari/Stripe-Apex-Toolkit)](https://github.com/aslambari/Stripe-Apex-Toolkit)** [![GitHub stars](https://img.shields.io/github/stars/aslambari/Stripe-Apex-Toolkit?style=social&color=white)](https://github.com/aslambari/Stripe-Apex-Toolkit/stargazers)
+* **[Stripe-Apex-Toolkit (aslambari/Stripe-Apex-Toolkit)](https://github.com/aslambari/Stripe-Apex-Toolkit)** [![GitHub_Stars](https://img.shields.io/github/stars/aslambari/Stripe-Apex-Toolkit?style=social&color=white)](https://github.com/aslambari/Stripe-Apex-Toolkit/stargazers)
   * **Stack:** Apex | **License:** MIT
   * **Overview:** Comprehensive Apex wrapper library for Stripe REST APIs, providing strongly typed classes for Stripe Customers, Invoices, Subscriptions, and PaymentIntents.
   * **Ideal For:** Salesforce engineers writing custom billing sync logic without having to construct raw HTTP JSON payloads manually.
 
-* **[Dunning and Collections for Salesforce Billing (SalesforceLabs/Dunning-and-Collections-Salesforce-Billing)](https://github.com/SalesforceLabs/Dunning-and-Collections-Salesforce-Billing)** [![GitHub stars](https://img.shields.io/github/stars/SalesforceLabs/Dunning-and-Collections-Salesforce-Billing?style=social&color=white)](https://github.com/SalesforceLabs/Dunning-and-Collections-Salesforce-Billing/stargazers)
+* **[Dunning and Collections for Salesforce Billing (SalesforceLabs/Dunning-and-Collections-Salesforce-Billing)](https://github.com/SalesforceLabs/Dunning-and-Collections-Salesforce-Billing)** [![GitHub_Stars](https://img.shields.io/github/stars/SalesforceLabs/Dunning-and-Collections-Salesforce-Billing?style=social&color=white)](https://github.com/SalesforceLabs/Dunning-and-Collections-Salesforce-Billing/stargazers)
   * **Stack:** Apex, Lightning Components | **License:** SalesforceLabs Open Source
   * **Overview:** Reference architecture and automated workflows for managing overdue invoices, late payment notifications, automated dunning cadences, and customer collections.
   * **Ideal For:** Salesforce Billing users needing out-of-the-box collections management without custom development.
 
-* **[SalesforceBillingPaymentGatewayMockAdapterReference (forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference)](https://github.com/forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference)** [![GitHub stars](https://img.shields.io/github/stars/forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference?style=social&color=white)](https://github.com/forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference/stargazers)
+* **[SalesforceBillingPaymentGatewayMockAdapterReference (forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference)](https://github.com/forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference)** [![GitHub_Stars](https://img.shields.io/github/stars/forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference?style=social&color=white)](https://github.com/forcedotcom/SalesforceBillingPaymentGatewayMockAdapterReference/stargazers)
   * **Stack:** Apex | **License:** BSD-3-Clause
   * **Overview:** Official reference implementation from Salesforce demonstrating how to construct custom payment gateway adapters for Salesforce Billing.
   * **Ideal For:** FinTech engineers developing custom payment gateway connectors (Adyen, Stripe, Checkout.com) into Salesforce Billing.
 
-* **[Delivery-Hub (Nimba-Solutions/Delivery-Hub)](https://github.com/Nimba-Solutions/Delivery-Hub)** [![GitHub stars](https://img.shields.io/github/stars/Nimba-Solutions/Delivery-Hub?style=social&color=white)](https://github.com/Nimba-Solutions/Delivery-Hub/stargazers)
+* **[Delivery-Hub (Nimba-Solutions/Delivery-Hub)](https://github.com/Nimba-Solutions/Delivery-Hub)** [![GitHub_Stars](https://img.shields.io/github/stars/Nimba-Solutions/Delivery-Hub?style=social&color=white)](https://github.com/Nimba-Solutions/Delivery-Hub/stargazers)
   * **Stack:** Apex, Lightning Web Components (LWC) | **License:** Open Source
   * **Overview:** Salesforce-native delivery pipeline providing one-click PDF invoice generation from logged work hours and bidirectional invoice/payment sync with QuickBooks.
   * **Ideal For:** Service agencies and consultancies wanting automated invoicing without external subscription middleware.
 
-* **[salesforce-stripe-payment-processing (Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe)](https://github.com/Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe)** [![GitHub stars](https://img.shields.io/github/stars/Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe?style=social&color=white)](https://github.com/Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe/stargazers)
+* **[salesforce-stripe-payment-processing (Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe)](https://github.com/Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe)** [![GitHub_Stars](https://img.shields.io/github/stars/Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe?style=social&color=white)](https://github.com/Cloud-Code-Academy/capstone-projects-salesforce-stripe-payment-processing-integration-developer-capstone-stripe/stargazers)
   * **Stack:** Apex, Webhooks, Queueable Apex | **License:** Open Source
   * **Overview:** Apex-native Stripe integration handling inbound webhooks (`invoice.payment_succeeded`, `subscription.updated`) and outbound calls with Custom Metadata secrets.
   * **Ideal For:** Production-tested blueprints for bi-directional Stripe webhook handling and event dispatching inside Salesforce orgs.
 
-* **[SFDC-MaxioAB-Integration (caseydunlap/SFDC-MaxioAB-Integration)](https://github.com/caseydunlap/SFDC-MaxioAB-Integration)** [![GitHub stars](https://img.shields.io/github/stars/caseydunlap/SFDC-MaxioAB-Integration?style=social&color=white)](https://github.com/caseydunlap/SFDC-MaxioAB-Integration/stargazers)
+* **[SFDC-MaxioAB-Integration (caseydunlap/SFDC-MaxioAB-Integration)](https://github.com/caseydunlap/SFDC-MaxioAB-Integration)** [![GitHub_Stars](https://img.shields.io/github/stars/caseydunlap/SFDC-MaxioAB-Integration?style=social&color=white)](https://github.com/caseydunlap/SFDC-MaxioAB-Integration/stargazers)
   * **Stack:** Python (AWS Lambda), Apex | **License:** Open Source
   * **Overview:** Serverless AWS Lambda pipeline integrating Salesforce closed-won opportunities with Maxio Advanced Billing (AB) and Maxio Core, persisted to Snowflake.
   * **Ideal For:** High-volume B2B teams running consumption billing on Maxio requiring serverless queue processing.
